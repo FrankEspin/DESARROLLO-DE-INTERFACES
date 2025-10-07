@@ -1,0 +1,322 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fondo neutro claro */
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #3498db; 
+    transform: scale(1.05);
+}
+
+/* Sección principal */
+#contenido {
+    text-align: center;
+    padding: 20px;
+}
+
+#contenido h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+}
+
+/* Estilo de las secciones */
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para la sección principal de Destinos Recomendados */
+#principal h2 {
+    font-size: 2.2em;
+    color: #2980b9;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #3498db;
+    color: white;
+}
+
+table td img {
+    width: 150px; /* Aseguramos un tamaño fijo para todas las imágenes */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+/* Estilo para las secciones de "Destinos", "Ofertas", y "Reservas" */
+#destinos ul {
+    font-size: 1.2em;
+    list-style-type: none;
+    padding: 0;
+}
+
+#destinos ul li {
+    margin: 10px 0;
+}
+
+#ofertas p {
+    font-size: 1.2em;
+}
+
+/* Estilo para las imágenes de destinos */
+.destino-imagen {
+    width: 200px; /* Todas las imágenes seran del mismo tamaño */
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Estilo para los destinos en la sección "Destinos" */
+#destinos .destino-item {
+    margin-bottom: 20px; 
+    padding: 10px; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+#destinos .destino-item h3 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 10px; /* Separación entre el título y la imagen */
+}
+
+#destinos .destino-item p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Para hacer que el espacio se vea más visible en pantallas grandes */
+@media screen and (min-width: 768px) {
+    #destinos .destino-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px; /* Más espacio en pantallas grandes */
+    }
+}
+
+/* Estilo para el formulario de reservas */
+form {
+    font-size: 1.2em;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"], form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+form button:hover {
+    background-color: #3498db;
+    transform: scale(1.05); /* Efecto de agrandar el botón al pasar el ratón */
+}
+
+/* Pie de página */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Sección activa */
+.seccion {
+    display: none;
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    table td img {
+        width: 100px;
+        height: 70px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    #contenido h2 {
+        font-size: 1.8em;
+    }
+
+    /* Ajustamos el tamaño de las imágenes para dispositivos pequeños */
+    .destino-imagen {
+        width: 250px; /* Menor tamaño para móviles */
+        height: 150px;
+    }
+
+    /* Para la sección de Ofertas */
+    #ofertas h2 {
+        font-size: 2em;
+    }
+
+    .ofertas-container {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .oferta-item {
+        padding: 20px;
+    }
+}
+
+/* Estilos para la sección de Ofertas */
+#ofertas {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+
+#ofertas h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.ofertas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grid responsive */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.oferta-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.oferta-item:hover {
+    transform: translateY(-10px); /* Efecto de elevación */
+}
+
+.oferta-header {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.oferta-header h3 {
+    font-size: 1.6em;
+    margin: 0;
+}
+
+.oferta-item p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.oferta-item p:hover {
+    color: #3498db; /* Movemos el raton y se pinta en azul */
+}
+
+@media screen and (max-width: 768px) {
+    .ofertas-container {
+        grid-template-columns: 1fr; /* Solo una columna en pantalla pequeña*/
+    }
+    
+    #ofertas h2 {
+        font-size: 2em; /* Ajustar tamaño de texto en móviles */
+    }
+}

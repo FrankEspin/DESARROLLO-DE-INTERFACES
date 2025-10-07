@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes 2025</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes 2025</h1>
+        <nav>
+            <!-- Links para movernos en el menu-->
+            <ul>
+                <li><a href="#" onclick="mostrarSeccion('principal')">Principal</a></li>
+                <li><a href="#" onclick="mostrarSeccion('destinos')">Destinos</a></li>
+                <li><a href="#" onclick="mostrarSeccion('ofertas')">Ofertas</a></li>
+                <li><a href="#" onclick="mostrarSeccion('reservas')">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Destinos Recomendados -->
+    <section id="principal" class="contenido" style="display: block;">
+        <h2>Destinos Recomendados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>Imagen</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Berlín</td>
+                    <td><img src="imagenes/berlin.avif" alt="Berlín" class="destino-imagen"></td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Roma</td>
+                    <td><img src="imagenes/roma.jpg" alt="Roma" class="destino-imagen"></td>
+                    <td>$950</td>
+                </tr>
+                <tr>
+                    <td>Edimburgo</td>
+                    <td><img src="imagenes/edimburgo_66084e2c_1280x720.jpg" alt="Edimburgo" class="destino-imagen"></td>
+                    <td>$1100</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Destinos -->
+    <section id="destinos" class="contenido" style="display: none;">
+        <h2>Destinos</h2>
+        <div id="destinos-lista">
+            <div class="destino-item">
+                <h3>Nueva York</h3>
+                <img src="imagenes/new-york.jpeg" alt="Nueva York" class="destino-imagen">
+                <p>Explore la ciudad que nunca duerme.</p>
+            </div>
+            <div class="destino-item">
+                <h3>Bruselas</h3>
+                <img src="imagenes/Bruselas-Belgica-4.webp" alt="Bruselas" class="destino-imagen">
+                <p>Disfruta del encanto de la capital europea.</p>
+            </div>
+            <div class="destino-item">
+                <h3>Tenerife</h3>
+                <img src="imagenes/Tenerife-2024-Teresitas-Beach-Shutterstock-2391136705-Hybris.jpg" alt="Tenerife" class="destino-imagen">
+                <p>Vive el sol y las playas en las Islas Canarias.</p>
+            </div>
+            <div class="destino-item">
+                <h3>Bali</h3>
+                <img src="imagenes/Bali.jpg" alt="Bali" class="destino-imagen">
+                <p>Relájate en la isla de los dioses.</p>
+            </div>
+            <div class="destino-item">
+                <h3>Japón</h3>
+                <img src="imagenes/japon.jpg" alt="Japón" class="destino-imagen">
+                <p>Sumérgete en la cultura milenaria de Asia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas -->
+<section id="ofertas" class="contenido" style="display: none;">
+    <h2>Ofertas Exclusivas</h2>
+    <div class="ofertas-container">
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>25% de descuento en hoteles en Canarias</h3>
+            </div>
+            <p>¡Escápate a las Islas Canarias con un 25% de descuento en tu estancia en los mejores hoteles!</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>10% de descuento en cruceros por el Mediterráneo</h3>
+            </div>
+            <p>Descubre las maravillas del Mediterráneo a bordo de un crucero con un 10% de descuento.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>30% de descuento en escapadas de fin de semana a París</h3>
+            </div>
+            <p>Haz de París tu destino romántico con un 30% de descuento en escapadas de fin de semana.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>5 noches por el precio de 3 en resorts de playa en México</h3>
+            </div>
+            <p>Aprovecha esta increíble oferta y disfruta de 5 noches en resorts de lujo en México pagando solo 3.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>Compra 2, paga 1 en entradas para parques temáticos en Florida</h3>
+            </div>
+            <p>¡No te pierdas la magia! Compra 2 entradas para parques temáticos y paga solo 1.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>20% de descuento en tours guiados en Japón</h3>
+            </div>
+            <p>Conoce Japón de la mano de expertos con un 20% de descuento en tours guiados.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>Hasta 50% de descuento en viajes a destinos exóticos como Bali y Maldivas</h3>
+            </div>
+            <p>Escápate a destinos paradisiacos con hasta un 50% de descuento en tu próximo viaje.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>Reserva anticipada: 15% de descuento en viajes de invierno a Laponia</h3>
+            </div>
+            <p>Disfruta del invierno en Laponia con un 15% de descuento por hacer tu reserva anticipada.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>Vuelos al 50% para niños menores de 12 años.</h3>
+            </div>
+            <p>Viaja con los más pequeños a mitad de precio en vuelos en las rutas nacionales para niños menores de 12 años.</p>
+        </div>
+        <div class="oferta-item">
+            <div class="oferta-header">
+                <h3>Descuento especial de última hora: hasta 40% en estancias en resorts de lujo en Dubái</h3>
+            </div>
+            <p>Aprovecha el descuento de última hora y hospédate en los mejores resorts de Dubái con hasta un 40% de descuento.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!--Reservas -->
+    <section id="reservas" class="contenido" style="display: none;">
+        <h2>Reservas</h2>
+        <form id="formReserva">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required><br><br>
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" required><br><br>
+            <label for="fecha">Fecha de viaje:</label>
+            <input type="date" id="fecha" required><br><br>
+            <button type="submit">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Agencia de Viajes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
